@@ -34,15 +34,13 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Why Work With Me
-            </span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Work With Tom</span>
           </h2>
-          
+
           <p className="text-xl text-center text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-            I bring a unique blend of strategic thinking, operational excellence, and creative problem-solving. 
-            Whether it's scaling a product from 2M to 7M users or managing $150M in media budgets, 
-            I thrive at the intersection of data-driven strategy and bold execution.
+            I bring a unique blend of strategic thinking, operational excellence, and creative problem-solving. Having
+            scaled an organization from 2M to 7M users and managed a merger, I thrive at the intersection of data-driven
+            strategy and bold execution.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
