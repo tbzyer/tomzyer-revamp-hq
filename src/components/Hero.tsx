@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import tomPhoto from "@/assets/tom-zyer-photo.jpg";
+import ResumeDownloadModal from "./ResumeDownloadModal";
 
 const Hero = () => {
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -49,14 +53,14 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button
-              onClick={() => scrollToSection("experience")}
+              onClick={() => scrollToSection("about")}
               size="lg"
               className="bg-gradient-primary hover:shadow-glow-purple transition-all text-lg px-8"
             >
-              View Experience
+              Learn More
             </Button>
             <Button
-              onClick={() => window.open('/Tom_Zyer_Resume_2025.pdf', '_blank')}
+              onClick={() => setIsResumeModalOpen(true)}
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
@@ -64,6 +68,11 @@ const Hero = () => {
               Download Resume
             </Button>
           </div>
+
+          <ResumeDownloadModal 
+            open={isResumeModalOpen} 
+            onOpenChange={setIsResumeModalOpen} 
+          />
 
           <button
             onClick={() => scrollToSection("about")}

@@ -1,1 +1,4 @@
 project_id = "fpwsvbomtvzlqbnljmik"
+
+[functions.notify-resume-download]
+verify_jwt = false
