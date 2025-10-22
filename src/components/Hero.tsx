@@ -74,19 +74,25 @@ const Hero = () => {
             onOpenChange={setIsResumeModalOpen} 
           />
 
-          <button
-            onClick={() => scrollToSection("about")}
-            className="animate-bounce inline-block"
-            aria-label="Scroll to about section"
-          >
-            <ArrowDown className="w-8 h-8 text-primary" />
-          </button>
+          <div className="flex flex-col items-center gap-2 mt-4">
+            <p className="text-sm text-foreground/60 font-medium animate-fade-in">Scroll to explore</p>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="animate-bounce inline-block p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+              aria-label="Scroll to about section"
+            >
+              <ArrowDown className="w-6 h-6 text-primary" />
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Gradient orbs for visual interest */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      
+      {/* Subtle gradient fade at bottom to suggest more content */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
   );
 };
