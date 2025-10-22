@@ -1,4 +1,5 @@
 import { Briefcase, Music, TrendingUp, GraduationCap } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const About = () => {
   const highlights = [
@@ -29,35 +30,37 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-background relative">
+    <section id="about" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-            Why Work With Me
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Why Work With Me
+            </span>
           </h2>
           
-          <p className="text-xl text-center text-foreground/70 mb-16 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-center text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             I bring a unique blend of strategic thinking, operational excellence, and creative problem-solving. 
             Whether it's scaling a product from 2M to 7M users or managing $150M in media budgets, 
             I thrive at the intersection of data-driven strategy and bold execution.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {highlights.map((item, index) => (
-              <div
+              <Card
                 key={index}
-                className="group"
+                className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all hover:shadow-glow-purple group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg transition-all group-hover:bg-primary/15">
+                  <div className="p-3 bg-primary/10 rounded-lg group-hover:shadow-glow-purple transition-all">
                     <item.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2 text-foreground">{item.title}</h3>
-                    <p className="text-foreground/60 leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-foreground/70">{item.description}</p>
                   </div>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>
