@@ -21,8 +21,7 @@ const About = () => {
     {
       icon: Music,
       title: "Leadership Beyond Business",
-      description:
-        "Eagle Scout, Navy Pier Associate Board Member, HCC Food Pantry Volunteer, and Kellogg Bands President.",
+      description: "Eagle Scout, Navy Pier Associate Board Member, HCC Food Pantry Volunteer",
     },
   ];
 
