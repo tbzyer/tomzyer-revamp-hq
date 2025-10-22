@@ -46,10 +46,16 @@ const Navigation = () => {
               About
             </button>
             <button
-              onClick={() => scrollToSection("music")}
+              onClick={() => scrollToSection("experience")}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Music
+              Experience
+            </button>
+            <button
+              onClick={() => scrollToSection("skills")}
+              className="text-foreground/80 hover:text-primary transition-colors"
+            >
+              Skills
             </button>
             <Button
               onClick={() => scrollToSection("contact")}
@@ -79,10 +85,16 @@ const Navigation = () => {
                 About
               </button>
               <button
-                onClick={() => scrollToSection("music")}
+                onClick={() => scrollToSection("experience")}
                 className="text-foreground/80 hover:text-primary transition-colors text-left"
               >
-                Music
+                Experience
+              </button>
+              <button
+                onClick={() => scrollToSection("skills")}
+                className="text-foreground/80 hover:text-primary transition-colors text-left"
+              >
+                Skills
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}

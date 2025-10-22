@@ -39,26 +39,29 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-            MBA graduate from Kellogg and product strategist with a passion for startups, 
-            music, and creating things that connect people. Whether I'm on stage or in a 
-            spreadsheet, I love chasing ideas and building with energy.
+            Kellogg MBA | Product & Strategy Leader | Drove 71% YoY user growth at Series-A startup
+          </p>
+
+          <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
+            Proven track record in go-to-market strategy, product operations, and growth marketing. 
+            Seeking consulting, strategy, and marketing roles where analytical rigor meets creative problem-solving.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("experience")}
               size="lg"
               className="bg-gradient-primary hover:shadow-glow-purple transition-all text-lg px-8"
             >
-              Learn More
+              View Experience
             </Button>
             <Button
-              onClick={() => scrollToSection("music")}
+              onClick={() => window.open('/Tom_Zyer_Resume_2025.pdf', '_blank')}
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
             >
-              Watch Performance
+              Download Resume
             </Button>
           </div>
 

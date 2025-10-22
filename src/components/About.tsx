@@ -1,4 +1,4 @@
-import { Briefcase, Music2, Lightbulb, GraduationCap } from "lucide-react";
+import { Briefcase, Music, TrendingUp, GraduationCap } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const About = () => {
@@ -6,51 +6,54 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Kellogg MBA",
-      description: "Recent graduate with focus on product strategy and entrepreneurship",
+      description:
+        "Finance major with leadership roles including Section Leader and Kellogg Bands President. Global Leadership Scholar at University of Tennessee.",
     },
     {
       icon: Briefcase,
-      title: "Product Strategist",
-      description: "Building innovative solutions for startups and growth-stage companies",
+      title: "Startup Growth Expert",
+      description:
+        "Drove 71% YoY user growth at Yik Yak (Series-A social media). Built GTM strategy and acquisition workflows at Goose (Series-A SaaS).",
     },
     {
-      icon: Music2,
-      title: "Musician",
-      description: "Performing artist with passion for creating memorable experiences",
+      icon: TrendingUp,
+      title: "Strategic Operator",
+      description:
+        "Restructured product teams, executed M&A integration, and managed $150M+ in advertising budgets across 30+ enterprise clients.",
     },
     {
-      icon: Lightbulb,
-      title: "Creator",
-      description: "Always exploring new ideas and connecting people through projects",
+      icon: Music,
+      title: "Leadership Beyond Business",
+      description:
+        "Eagle Scout, Navy Pier Associate Board Member, and Kellogg Bands President. I bring leadership, teamwork, and creative energy to everything I do.",
     },
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 rounded-full blur-3xl" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="about" className="py-20 bg-secondary/30">
+      <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 animate-fade-in">
-            About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Why Work With Me
+            </span>
           </h2>
           
-          <p className="text-lg text-center text-foreground/70 mb-16 max-w-3xl mx-auto animate-fade-in">
-            I thrive at the intersection of business and creativity. My journey combines 
-            strategic thinking with artistic expression, always driven by a desire to 
-            build meaningful connections and impactful experiences.
+          <p className="text-xl text-center text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+            I bring a unique blend of strategic thinking, operational excellence, and creative problem-solving. 
+            Whether it's scaling a product from 2M to 7M users or managing $150M in media budgets, 
+            I thrive at the intersection of data-driven strategy and bold execution.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in-up">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {highlights.map((item, index) => (
               <Card
                 key={index}
                 className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all hover:shadow-glow-purple group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-gradient-primary rounded-lg group-hover:shadow-glow-purple transition-all">
-                    <item.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className="p-3 bg-primary/10 rounded-lg group-hover:shadow-glow-purple transition-all">
+                    <item.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
