@@ -17,21 +17,21 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Animated background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-blue-500/20 animate-gradient-shift bg-[length:200%_200%]" />
+      {/* Subtle animated background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Profile Photo */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-12 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-50 animate-pulse"></div>
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
               <img 
                 src={tomPhoto} 
-                alt="Tom Zyer" 
-                className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary/30 shadow-glow-purple"
+                alt="Tom Zyer - Professional headshot" 
+                className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-2 border-primary/20"
               />
             </div>
           </div>
@@ -51,11 +51,11 @@ const Hero = () => {
             Seeking consulting, strategy, and marketing roles where analytical rigor meets creative problem-solving.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               onClick={() => scrollToSection("about")}
               size="lg"
-              className="bg-gradient-primary hover:shadow-glow-purple transition-all text-lg px-8"
+              className="bg-primary hover:bg-primary/90 transition-all text-lg px-8"
             >
               Learn More
             </Button>
@@ -63,7 +63,7 @@ const Hero = () => {
               onClick={() => setIsResumeModalOpen(true)}
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
+              className="border-border hover:bg-secondary/50 text-lg px-8"
             >
               Download Resume
             </Button>
@@ -73,26 +73,12 @@ const Hero = () => {
             open={isResumeModalOpen} 
             onOpenChange={setIsResumeModalOpen} 
           />
-
-          <div className="flex flex-col items-center gap-2 mt-4">
-            <p className="text-sm text-foreground/60 font-medium animate-fade-in">Scroll to explore</p>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="animate-bounce inline-block p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
-              aria-label="Scroll to about section"
-            >
-              <ArrowDown className="w-6 h-6 text-primary" />
-            </button>
-          </div>
         </div>
       </div>
 
-      {/* Gradient orbs for visual interest */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
-      
-      {/* Subtle gradient fade at bottom to suggest more content */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+      {/* Subtle decorative elements */}
+      <div className="absolute top-1/3 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
     </section>
   );
 };

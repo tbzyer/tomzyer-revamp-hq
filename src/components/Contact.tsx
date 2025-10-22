@@ -1,28 +1,26 @@
 import { Mail, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-24 bg-background relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Let's Connect
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Let's Connect
           </h2>
           
-          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/70 mb-12 max-w-2xl mx-auto">
             Open to consulting, strategy, marketing, and operations roles. 
             Let's discuss how I can drive impact at your organization.
           </p>
 
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-border">
+          <div className="p-8 rounded-lg bg-card/30 backdrop-blur-sm border border-border/50">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 size="lg"
-                className="bg-gradient-primary hover:shadow-glow-purple transition-all w-full sm:w-auto"
+                className="bg-primary hover:bg-primary/90 transition-all w-full sm:w-auto"
                 asChild
               >
                 <a href="mailto:tom.zyer@kellogg.northwestern.edu" className="flex items-center gap-2">
@@ -34,7 +32,7 @@ const Contact = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto"
+                className="border-border hover:bg-secondary/50 w-full sm:w-auto"
                 asChild
               >
                 <a
@@ -48,7 +46,7 @@ const Contact = () => {
                 </a>
               </Button>
             </div>
-          </Card>
+          </div>
 
           <div className="mt-16 pt-8 border-t border-border/50">
             <p className="text-sm text-foreground/50">
