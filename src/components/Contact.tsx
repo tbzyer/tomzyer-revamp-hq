@@ -38,7 +38,7 @@ const Contact = () => {
                 asChild
               >
                 <a
-                  href="https://linkedin.com/in/tomzyer"
+                  href="https://www.linkedin.com/in/tzyer/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
