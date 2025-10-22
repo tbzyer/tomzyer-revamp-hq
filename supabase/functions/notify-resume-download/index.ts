@@ -28,7 +28,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to Tom
     const notificationResponse = await resend.emails.send({
       from: "Resume Tracker <onboarding@resend.dev>",
-      to: ["tom.zyer@kellogg.northwestern.edu"],
+      to: ["tzyer@icloud.com"],
       subject: "New Resume Download",
       html: `
         <h2>Someone downloaded your resume!</h2>
