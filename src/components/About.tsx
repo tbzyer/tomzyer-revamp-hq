@@ -16,8 +16,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: "Strategic Operator",
-      description:
-        "Restructured product teams, executed M&A integration, and managed $150M+ in advertising budgets across 30+ enterprise clients.",
+      description: "Restructured product team and executed M&A integration as part senior leadership team.",
     },
     {
       icon: Music,
