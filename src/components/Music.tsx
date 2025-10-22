@@ -34,7 +34,7 @@ const Music = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold mb-2">Battle of the Bands 2025</h3>
                   <p className="text-foreground/70">
-                    Performing with the *Captains of Industry* at the 2025 Battle of the Bands
+                    Performing with the Captains of Industry at the 2025 Battle of the Bands
                   </p>
                 </div>
               </div>
