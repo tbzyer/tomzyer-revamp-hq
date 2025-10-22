@@ -6,14 +6,12 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Kellogg MBA",
-      description:
-        "Finance major with leadership roles including Section Leader and Kellogg Bands President. Global Leadership Scholar at University of Tennessee.",
+      description: "Finance major with leadership roles including Section Leader and Kellogg Bands President.",
     },
     {
       icon: Briefcase,
       title: "Startup Growth Expert",
-      description:
-        "Drove 71% YoY user growth at Yik Yak (Series-A social media). Built GTM strategy and acquisition workflows at Goose (Series-A SaaS).",
+      description: "Drove 71% YoY user growth at Yik Yak (Series-A social media).",
     },
     {
       icon: TrendingUp,
